@@ -1,5 +1,5 @@
-<template>
-  <div id="app">{{ msg }}</div>
+<template lang="pug">
+  div(id="app") {{ msg }}
 </template>
 
 <script>
