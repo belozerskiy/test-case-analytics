@@ -9,10 +9,16 @@
   "devDependencies": {
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0"
+    "eslint-config-prettier": "^2.9.0",
+    "g2": "^2.3.13",
+    "g2-vue": "^0.1.1",
+    "vuetrend": "^0.3.2"
   },
   "eslintConfig": {
-    "extends": ["airbnb-base", "prettier"],
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
     "parserOptions": {
       "ecmaVersion": 6
     }
