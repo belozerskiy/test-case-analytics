@@ -1,5 +1,9 @@
 <template lang="pug">
-        input(class="uk-input" placeholder="Input your ID")
+        div
+                div(class="uk-margin")
+                div(class="uk-inline")
+                        span(class="uk-form-icon" uk-icon="icon: user")
+                        input(class="uk-input" type="text" placeholder="Введите userID")
 </template>
 
 <script>
