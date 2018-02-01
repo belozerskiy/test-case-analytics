@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "v-calendar": "^0.5.5",
     "vue": "^2.5.11",
     "vue2-slot-calendar": "^2.1.4",
     "vuetrend": "^0.3.2"
@@ -27,6 +28,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
     "bootstrap-sass": "^3.3.7",
+    "buefy": "^0.6.3",
     "chart.js": "^2.7.1",
     "chartkick": "^2.2.4",
     "cross-env": "^5.1.3",
