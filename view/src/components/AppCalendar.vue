@@ -13,7 +13,6 @@ export default {
   },
   watch: {
     selectedDate(date) {
-      console.log(date.start, date.end);
       date.start.setHours(0, -date.start.getTimezoneOffset(), 0, 0);
       date.end.setHours(0, -date.end.getTimezoneOffset(), 0, 0);
       this.$emit("date-change", date);

@@ -18,7 +18,7 @@ div(id="app")
                   :disabled="isPartnerSet"
                   @date-change="handleDateChange"
                 )
-                p {{}}
+                p {{ json }}
   analyticContainer
 </template>
 
