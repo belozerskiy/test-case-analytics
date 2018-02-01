@@ -1,14 +1,14 @@
 <template lang="pug">
-  div(id="app") {{ msg }}
+  div(id="app")
+    container
 </template>
 
 <script>
+import Container from "./components/Container";
+
 export default {
-  name: "app",
-  data() {
-    return {
-      msg: "Welcome to Your Vue.js App"
-    };
+  components: {
+    container: Container
   }
 };
 </script>
