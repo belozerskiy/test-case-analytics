@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import Trend from "vuetrend";
 
 // UIKit framework CSS and JS files
 import "../node_modules/uikit/dist/css/uikit.css";
@@ -15,6 +16,8 @@ import Highcharts from "highcharts";
 
 window.Highcharts = Highcharts;
 Vue.use(VueChartkick, { Chartkick });
+
+Vue.use(Trend);
 
 new Vue({
   el: "#app",
