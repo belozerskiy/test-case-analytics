@@ -11,12 +11,12 @@ div(id="app")
               div(class="uk-card uk-card-default uk-card-body")
                 app-input(
                   :input="partnerId" 
-                  :handle="handleChange")
+                  :handle="handlePartnerChange")
             div 
               div(class="uk-card uk-card-default uk-card-body")
                 appCalendar(
-                  :inputValue="range"
-                  :handle="updateValue"
+                  :disabled="isPartnerSet"
+                  @date-change="handleDateChange"
                 )
                 p {{}}
   analyticContainer
@@ -39,17 +39,33 @@ export default {
   },
   data() {
     return {
+      selectedDate: null,
       partnerId: "",
-      range: ""
+      json: ""
     };
   },
+  computed: {
+    isPartnerSet() {
+      return this.partnerId != "";
+    }
+  },
   methods: {
-    handleChange(event) {
+    handlePartnerChange(event) {
       this.partnerId = event.target.value;
     },
-    updateValue(range) {
-      this.range = event.target.value;
-      console.log(range);
+    handleDateChange(date) {
+      let from = date.start.toISOString().split("T")[0];
+      let to = date.end.toISOString().split("T")[0];
+
+      api
+        .getStatisticByPeriod(this.partnerId, { from, to })
+        .then(({ data }) => (this.json = data))
+        .catch(({ message }) => console.log(message));
+    }
+  },
+  watch: {
+    selectedDate(date) {
+      console.log(date);
     }
   }
 };
