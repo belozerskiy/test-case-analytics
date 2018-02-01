@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "vue": "^2.5.11",
-    "vue2-slot-calendar": "^2.1.4"
+    "vue2-slot-calendar": "^2.1.4",
+    "vuetrend": "^0.3.2"
   },
   "browserslist": [
     "> 1%",

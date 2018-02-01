@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import Trend from "vuetrend";
 
 // UIKit framework CSS and JS files
 import "../node_modules/uikit/dist/css/uikit.css";
@@ -8,6 +9,8 @@ import "../node_modules/uikit/dist/js/uikit-icons.js";
 
 // Chart.js
 import Chart from "chart.js";
+
+Vue.use(Trend);
 
 new Vue({
   el: "#app",
