@@ -60,11 +60,6 @@ export default {
   },
   watch: {
     columns(newColumns) {
-      // this.options.data.columns = [
-      //   ["date", "2017-11-11", "2018-12-11"],
-      //   ...newColumns
-      // ];
-      // this.handler.$emit("init", this.options);
       this.redraw();
     }
   }
