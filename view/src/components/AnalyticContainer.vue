@@ -3,7 +3,7 @@ div
   div(class="uk-section uk-section-primary uk-preserve-color uk-padding-remove-bottom")
     div(class="uk-container")
       div(class="uk-panel uk-light uk-margin-small")
-        h2(class="uk-text-bold uk-text-center") Статистика
+        h2(class="uk-text-bold uk-text-large") Статистика
         div(class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid)
             div 
                 div(class="uk-card uk-card-body uk-card-default")

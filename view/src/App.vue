@@ -3,7 +3,7 @@ div(id="app")
   div(class="uk-section uk-section-primary uk-preserve-color uk-padding-remove-bottom")
     div(class="uk-container")
       div(class="uk-panel uk-light uk-margin-small")
-        h3 Укажите ID пользователя и выберите дату
+        h2(class="uk-text-bold uk-text-large") Укажите ID пользователя и выберите дату
       div(class="uk-grid-match uk-child-width-expand@s" uk-grid)
         div
           div(class="uk-grid-match uk-child-width-expand@m" uk-grid)
@@ -18,7 +18,7 @@ div(id="app")
                   :disabled="isPartnerSet"
                   @date-change="handleDateChange"
                 )
-  analyticContainer(:data="json.stats")
+      analyticContainer(:data="json.stats")
 </template>
 
 <script>

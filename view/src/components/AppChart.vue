@@ -28,7 +28,7 @@ export default {
             x: "date",
             columns: this.columns,
             axes: {
-              data2: "y2" // ADD
+              REGISTRATION: "y2" // ADD
             }
           },
           axis: {

@@ -1,5 +1,5 @@
 <template>
-  <v-date-picker v-show="disabled" :mode='mode' v-model='selectedDate' ></v-date-picker>
+  <v-date-picker input-class="uk-input" v-show="disabled" :mode='mode' v-model='selectedDate' ></v-date-picker>
 </template>
 
 <script>
