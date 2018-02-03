@@ -10,7 +10,7 @@ div
                     appReport(:data="data")
             div
                 div(class="uk-card uk-card-body uk-card-default")
-                    appChart
+                    appChart(:columns="columns")
 </template>
 
 
@@ -20,6 +20,17 @@ import AppChart from "./AppChart.vue";
 
 export default {
   props: ["data"],
+  computed: {
+    columns() {
+      let arr = [["date"], ["LINK_VISITOR"], ["REGISTRATION"]];
+      this.data.forEach(el => {
+        arr[0].push(el.DATE);
+        arr[1].push(el.LINK_VISITOR_COUNT);
+        arr[2].push(el.REGISTRATION_COUNT);
+      });
+      return arr;
+    }
+  },
   components: {
     appReport: AppReport,
     appChart: AppChart

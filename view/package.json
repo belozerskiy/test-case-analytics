@@ -7,15 +7,20 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build":
-      "cross-env NODE_ENV=production webpack --progress --hide-modules && cp index.html ../public"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && cp index.html ../public"
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "c3": "^0.4.18",
     "v-calendar": "^0.5.5",
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-c3": "^1.1.1"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "devDependencies": {
     "@vue/eslint-config-airbnb": "^3.0.0-alpha.5",
     "babel-core": "^6.26.0",
@@ -40,7 +45,9 @@
     "webpack-dev-server": "^2.9.1"
   },
   "eslintConfig": {
-    "extends": ["plugin:vue/recommended"]
+    "extends": [
+      "plugin:vue/recommended"
+    ]
   },
   "babel": {
     "presets": [
