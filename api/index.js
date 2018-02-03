@@ -6,7 +6,7 @@ const { DateTime } = require("luxon");
 
 module.exports = {
   getStatsByPeriod,
-  getStatsByPeriodWithQuery,
+  getStatsByPeriodV2,
   getStatsByDate
 };
 
@@ -49,7 +49,7 @@ async function getStatsByPeriod(req, res) {
   }
 }
 
-async function getStatsByPeriodWithQuery(req, res) {
+async function getStatsByPeriodV2(req, res) {
   let { id } = req.params;
   let { from, to } = req.query;
 

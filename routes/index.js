@@ -5,6 +5,6 @@ const router = new Router();
 
 router.get("/v1/stats/:id/", api.getStatsByDate);
 router.get("/v1/stats/:id/period/", api.getStatsByPeriod);
-router.get("/v2/stats/:id/period/", api.getStatsByPeriodWithQuery);
+router.get("/v2/stats/:id/period/", api.getStatsByPeriodV2);
 
 module.exports = router;
