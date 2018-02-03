@@ -64,8 +64,14 @@ export default {
     }
   },
   watch: {
-    selectedDate(date) {
-      console.log(date);
+    selectedDate(newDate) {
+      console.log(newDate);
+    },
+    partnerId(newPartnerId) {
+      if (newPartnerId === "") {
+        this.selectedDate = null;
+        this.json = "";
+      }
     }
   }
 };

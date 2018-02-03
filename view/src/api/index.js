@@ -8,6 +8,6 @@ export function getStatisticByDate(partnerId, date) {
 }
 
 export function getStatisticByPeriod(partnerId, { from, to }) {
-  const url = `api/v1/stats/${partnerId}/period?from=${from}&to=${to}`;
+  const url = `api/v2/stats/${partnerId}/period?from=${from}&to=${to}`;
   return axios.get(url);
 }
