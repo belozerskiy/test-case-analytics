@@ -1,5 +1,5 @@
 # test-case-analytics
 
-yarn install
-yarn build
-yarn start
+* yarn install
+* yarn build
+* yarn start
