@@ -7,7 +7,7 @@ div
         div(class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid)
             div 
                 div(class="uk-card uk-card-body uk-card-default")
-                    appReport
+                    appReport(:data="data")
             div
                 div(class="uk-card uk-card-body uk-card-default")
                     appChart
@@ -19,6 +19,7 @@ import AppReport from "./AppReport.vue";
 import AppChart from "./AppChart.vue";
 
 export default {
+  props: ["data"],
   components: {
     appReport: AppReport,
     appChart: AppChart

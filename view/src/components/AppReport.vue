@@ -4,48 +4,27 @@
         table(class="uk-table uk-table-striped")
             thead
                 tr
-                    th Дата
+                    th Дата 
                     th Посещённый
                     th Регистраци
                     th Итог
-            tbody(uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500")
-                tr
-                    td 11.12.2017
-                    td 23
-                    td 11
-                    td 22
-                tr
-                    td 11.12.2017
-                    td 53
-                    td 11
-                    td 22
-                tr
-                    td 11.12.2017
-                    td 73
-                    td 11
-                    td 22
-                tr
-                    td 11.12.2017
-                    td 93
-                    td 11
-                    td 22
-                tr
-                    td 11.12.20170
-                    td 113
-                    td 11
-                    td 22
-                tr
-                    td 11.12.20172
-                    td 133
-                    td 11
-                    td 22
-                tr
-                    td 11.12.20174
-                    td 153
-                    td 11
-                    td 22
+            tbody
+                tr(v-for="item in data" :key="item.DATE" class="uk-text-center") 
+                    td {{ item.DATE }}
+                    td {{ item.LINK_VISITOR_COUNT }}
+                    td {{ item.REGISTRATION_COUNT }}
+                    td {{ item.DEPOSIT_VALUE }}
+                
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["data"]
+};
 </script>
+
+<style lang="scss">
+th {
+  color: black !important;
+}
+</style>

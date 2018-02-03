@@ -8,14 +8,6 @@ import "../node_modules/uikit/dist/js/uikit.js";
 import "../node_modules/uikit/dist/js/uikit-icons.js";
 import "../node_modules/uikit/dist/js/uikit-icons.min.js";
 
-// Chartkick.js
-import Chartkick from "chartkick";
-import VueChartkick from "vue-chartkick";
-import Highcharts from "highcharts";
-
-window.Highcharts = Highcharts;
-Vue.use(VueChartkick, { Chartkick });
-
 // VCalendar
 import VCalendar from "v-calendar";
 import "v-calendar/lib/v-calendar.min.css";
