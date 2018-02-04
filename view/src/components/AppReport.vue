@@ -13,8 +13,8 @@
           td {{ item.DATE }}
           td {{ item.LINK_VISITOR_COUNT }}
           td {{ item.REGISTRATION_COUNT }}
-          td {{ item.DEPOSIT_VALUE | courency }}
-          
+          td {{ item.PAYEMENT_VALUE | courency }}
+      
 </template>
 
 <script>
