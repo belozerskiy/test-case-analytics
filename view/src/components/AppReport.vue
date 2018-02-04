@@ -13,13 +13,23 @@
           td {{ item.DATE }}
           td {{ item.LINK_VISITOR_COUNT }}
           td {{ item.REGISTRATION_COUNT }}
-          td {{ item.DEPOSIT_VALUE }}
+          td {{ item.DEPOSIT_VALUE | courency }}
           
 </template>
 
 <script>
+import accounting from "accounting";
+
 export default {
-  props: ["data"]
+  props: ["data"],
+  filters: {
+    courency(value) {
+      return accounting.formatMoney(value, {
+        symbol: "₽",
+        format: "%v %s"
+      });
+    }
+  }
 };
 </script>
 

@@ -10,6 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && cp index.html ../public"
   },
   "dependencies": {
+    "accounting": "^0.4.1",
     "axios": "^0.17.1",
     "c3": "^0.4.18",
     "v-calendar": "^0.5.5",
