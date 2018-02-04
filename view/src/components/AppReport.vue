@@ -5,8 +5,8 @@
       thead
         tr
           th Дата 
-          th Посещённый
-          th Регистраци
+          th Посещений
+          th Регистраций
           th Доход
       tbody
         tr(v-for="item in data" :key="item.DATE" class="uk-text-center") 
